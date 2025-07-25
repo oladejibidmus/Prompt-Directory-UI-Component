@@ -11,9 +11,9 @@ export function PromptModal({
 }) {
   const [isEditing, setIsEditing] = useState(false);
   const typeIcons = {
-    prompt: <MessageSquare size={20} className="text-purple-500" />,
-    command: <Terminal size={20} className="text-green-500" />,
-    code: <Code size={20} className="text-blue-500" />
+    prompt: <MessageSquare size={20} className="text-orange-600" />,
+    command: <Terminal size={20} className="text-orange-600" />,
+    code: <Code size={20} className="text-orange-600" />
   };
   const handleCopy = () => {
     navigator.clipboard.writeText(prompt.content);
@@ -87,7 +87,7 @@ export function PromptModal({
               <Trash size={16} />
               Delete
             </button>
-            <button onClick={() => setIsEditing(true)} className="px-4 py-2.5 bg-gradient-to-r from-indigo-600 to-indigo-500 text-white rounded-lg hover:from-indigo-700 hover:to-indigo-600 transition-all shadow-sm hover:shadow flex items-center gap-2 font-medium">
+            <button onClick={() => setIsEditing(true)} className="px-4 py-2.5 bg-gradient-to-r from-orange-700 to-orange-500 text-white rounded-lg hover:from-orange-800 hover:to-orange-600 transition-all shadow-sm hover:shadow flex items-center gap-2 font-medium">
               <Edit size={16} />
               Edit
             </button>

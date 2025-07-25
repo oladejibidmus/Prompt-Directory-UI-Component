@@ -20,14 +20,14 @@ export function Layout({
         <div className="p-6 max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
             <h1 className="text-2xl font-bold text-slate-800 flex items-center">
-              <span className="bg-gradient-to-r from-indigo-600 to-indigo-400 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-r from-orange-700 to-orange-500 text-transparent bg-clip-text">
                 Prompt Gallery
               </span>
             </h1>
             <div className="flex items-center gap-4 w-full sm:w-auto">
               <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
               <ViewToggle view={view} setView={setView} />
-              <button onClick={onAddNew} className="bg-gradient-to-r from-indigo-600 to-indigo-500 text-white px-3 py-2 rounded-lg hover:from-indigo-700 hover:to-indigo-600 transition-all shadow-sm hover:shadow flex items-center gap-2">
+              <button onClick={onAddNew} className="bg-gradient-to-r from-orange-700 to-orange-500 text-white px-3 py-2 rounded-lg hover:from-orange-800 hover:to-orange-600 transition-all shadow-sm hover:shadow flex items-center gap-2">
                 <PlusIcon size={16} />
                 <span className="hidden sm:inline font-medium">Add New</span>
               </button>
